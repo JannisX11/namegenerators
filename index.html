@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Generators</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		var selected_id;
+		function setGenerator(id) {
+			selected_id = id;
+			$('li.selected').removeClass('selected');
+			$('li#'+id).addClass('selected');
+			$('#word').text(' ');
+		}
+		function generate() {
+			var word = ' ';
+			switch(selected_id) {
+				case 'realms': word = generateRealmsName(); break;
+				case 'content': word = generateContentName(); break;
+				case 'team': word = generateTeamName(); break;
+			}
+			$('#word').text(word);
+			return word;
+		}
+	</script>
+	<script src="generators.js"></script>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li id="realms" onclick="setGenerator('realms')">Realms Map Names</li>
+			<li id="content" onclick="setGenerator('content')">Marketplace Content Names</li>
+			<li id="team" onclick="setGenerator('team')">Marketplace Team Names</li>
+		</ul>
+	</div>
+	<div id="main">
+		<h2 id="word"> </h2>
+		<button onclick="generate()">Generate</button>
+	</div>
+	<script type="text/javascript">
+		if (location.hash.length > 1) {
+			setGenerator(location.hash.substr(1));
+		} else {
+			setGenerator('realms');
+		}
+	</script>
+</body>
+</html>
