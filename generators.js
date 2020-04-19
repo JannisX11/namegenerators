@@ -642,6 +642,10 @@ function generateJobTitle() {
 		'Nope this doesn\'t work',
 		'Recursion',
 		'Furniture Delivery',
+		'Pun',
+		'Joke',
+		'Slogan',
+		'Cheesy Dialog',
 		'Crash',
 		'Payout',
 		'Feature Creep',
@@ -711,6 +715,7 @@ function generateJobTitle() {
 		'Head of % and %',
 		'% and % Expert',
 		'Expert for %',
+		'%: Modern',
 	]
 
 	let job = jobs.random()
