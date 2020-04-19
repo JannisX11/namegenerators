@@ -22,6 +22,7 @@
 				case 'realms': word = generateRealmsName(); break;
 				case 'content': word = generateContentName(); break;
 				case 'team': word = generateTeamName(); break;
+				case 'job': word = generateJobTitle(); break;
 			}
 			$('#word').text(word);
 			return word;
@@ -35,6 +36,7 @@
 			<li id="realms" onclick="setGenerator('realms')">Realms Map Names</li>
 			<li id="content" onclick="setGenerator('content')">Marketplace Content Names</li>
 			<li id="team" onclick="setGenerator('team')">Marketplace Team Names</li>
+			<li id="job" onclick="setGenerator('job')">Marketplace Job Titles</li>
 		</ul>
 	</div>
 	<div id="main">
