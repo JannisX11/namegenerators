@@ -671,6 +671,7 @@ function generateJobTitle() {
 		'Boat Fixing',
 		'Motivation',
 		'Money',
+		'Cash',
 		'Communication',
 		'Timezone',
 		'Extreme Pirate Beauty',
@@ -702,6 +703,7 @@ function generateJobTitle() {
 		'Officer',
 		'Creator',
 		'Division Supervisor',
+		'Implementation Manager',
 		'Guru',
 		'Expert',
 		'Consultant',
@@ -721,7 +723,6 @@ function generateJobTitle() {
 		'Head of % and %',
 		'% and % Expert',
 		'Expert for %',
-		'%: Modern',
 	]
 
 	let job = jobs.random()
