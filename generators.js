@@ -256,6 +256,36 @@ function generateRealmsName() {
 
 function generateContentName() {
 
+	var themes = [
+		'Classic',
+		'Modern',
+		'Advanced',
+		'Haunted',
+		'Galactic',
+		'Jurassic',
+		'Medieval',
+		'Ancient',
+		'Anime',
+		'Cute',
+		'City',
+		'Vintage',
+		'Super',
+		'Extreme',
+		'Lucky',
+		'Frozen',
+		'High School',
+		'Hoodie',
+		'Teen',
+		'Military',
+		'Neon',
+		'Pastel',
+		'Steampunk',
+		'Rainbow',
+		'Lucky Block',
+		'Tropical',
+		'Tribal',
+		'Lost',
+	]
 	var subjects = [
 		'Farm',
 		'Dinosaurs',
@@ -286,6 +316,15 @@ function generateContentName() {
 		'Virus',
 		'Cop',
 		'Yolo',
+		'Teens',
+		'Agents',
+		'Mobs',
+		'Knights',
+		'Alients',
+		'Popstars',
+		'Zombies',
+		'Candy',
+		'Firefighter',
 	]
 	var context = [
 		'Craft',
@@ -320,26 +359,14 @@ function generateContentName() {
 		'Parkour',
 		'Sport',
 		'Beauty',
-	] 
-	var themes = [
-		'Classic',
-		'Modern',
-		'Advanced',
-		'Haunted',
-		'Galactic',
-		'Jurassic',
-		'Medieval',
-		'Ancient',
-		'Anime',
-		'Cute',
-		'City',
-		'Vintage',
-		'Super',
-		'Extreme',
-		'Lucky',
-		'Frozen',
-		'High School',
-		'Hoodie',
+		'Teen',
+		'Pack',
+		'Folk',
+		'Swag',
+		'Creatures',
+		'Mobs',
+		'Block',
+		'Animals',
 	]
 	var structures = [
 		'$t $s',
@@ -356,6 +383,7 @@ function generateContentName() {
 		'$s',
 		'$s $s $c',
 		'$s: $s',
+		'$s vs $s',
 	]
 
 	var strc = structures.random();
@@ -376,6 +404,7 @@ function generateTeamName() {
 		'37',
 		'ABC',
 		'Entity',
+		'Duh',
 		'Area',
 		'Zyclone',
 		'Anybloom',
@@ -615,6 +644,7 @@ function generateJobTitle() {
 		'Pirate',
 		'Experienced',
 		'Highly Productive',
+		'Cheeky',
 		'',
 	]
 	var subjects = [
@@ -646,7 +676,9 @@ function generateJobTitle() {
 		'Googling',
 		'Trial and Error',
 		'Nope this doesn\'t work',
+		'Button Finding',
 		'Recursion',
+		'Diversity',
 		'Furniture Delivery',
 		'Pun',
 		'Joke',
