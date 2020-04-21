@@ -285,6 +285,7 @@ function generateContentName() {
 		'Tropical',
 		'Tribal',
 		'Lost',
+		'Infinity',
 	]
 	var subjects = [
 		'Farm',
@@ -296,7 +297,6 @@ function generateContentName() {
 		'Skyblock',
 		'Sam & Danni',
 		'Dan & Sammy',
-		'Dam & Sunny',
 		'Villa',
 		'Racing',
 		'Ninja',
@@ -317,14 +317,14 @@ function generateContentName() {
 		'Cop',
 		'Yolo',
 		'Teens',
-		'Agents',
 		'Mobs',
 		'Knights',
-		'Alients',
 		'Popstars',
 		'Zombies',
 		'Candy',
 		'Firefighter',
+		'Noob',
+		'Pro',
 	]
 	var context = [
 		'Craft',
@@ -367,6 +367,7 @@ function generateContentName() {
 		'Mobs',
 		'Block',
 		'Animals',
+		'World',
 	]
 	var structures = [
 		'$t $s',
