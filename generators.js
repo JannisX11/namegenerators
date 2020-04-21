@@ -374,7 +374,6 @@ function generateContentName() {
 		'$t $s',
 		'$t$s',
 		'$s: $t',
-		'$s: $t',
 		'$s $c',
 		'$s $c',
 		'$s $c: $t',
@@ -384,6 +383,7 @@ function generateContentName() {
 		'$s',
 		'$s $s $c',
 		'$s: $s',
+		'$s vs $s',
 		'$s vs $s',
 	]
 
