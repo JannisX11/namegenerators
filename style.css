@@ -13,12 +13,20 @@ body {
 	font-family: Raleway, 'Segoe UI', sans-serif;
 	color: #556;
 }
+body.night_mode {
+	color: #b6b6c0;
+	background-color: #2c2d2f;
+}
 div#menu {
 	width: 320px;
 	padding: 20px 0;
 	margin: 20px 0;
 	font-size: 15pt;
 	border-right: 2px solid #eee;
+	position: relative;
+}
+body.night_mode div#menu {
+	border-color: #1d1e20;
 }
 ul {
 	list-style: none;
@@ -34,7 +42,18 @@ ul {
 	transition: padding-left 100ms ease;
 }
 li.selected {
-	background-color: #5def92;
+	background-color: #3ec56f;
+	color: white;
+}
+#menu div#about {
+	position: absolute;
+	bottom: 0;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+#menu div#about span {
+	opacity: 0.6;
 }
 #main {
 	text-align: center;
@@ -46,13 +65,15 @@ h2 {
 	min-height: 50px;
 	color: #556;
 }
+body.night_mode h2 {
+	color: #dadadf;
+}
 button {
     height: 48px;
     width: 180px;
     border: none;
     background-color: #3ec56f;
     text-align: center;
-    vertical-align: middle;
     outline: none;
     color: white;
 	font-family: Raleway, 'Segoe UI', sans-serif;
@@ -60,9 +81,16 @@ button {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	cursor: pointer;
 }
 button:hover {
     background-color: #58dd88;
+}
+#nightmode_button {
+	cursor: pointer;
+	float: right;
+	width: 30px;
+	text-align: center;
 }
 
 @media (max-device-width: 500px) {
