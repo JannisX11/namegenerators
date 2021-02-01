@@ -10,6 +10,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
 
+		Array.prototype.random = function() {
+			var i = Math.floor(Math.random()*this.length);
+			return this[i];
+		}
+
 		var selected_id;
 		function setGenerator(id) {
 			selected_id = id;
@@ -34,7 +39,10 @@
 		}
 
 	</script>
-	<script src="generators.js"></script>
+	<script src="generators/realms.js"></script>
+	<script src="generators/mp_product.js"></script>
+	<script src="generators/mp_team.js"></script>
+	<script src="generators/mp_job.js"></script>
 </head>
 <body>
 	<script>
@@ -50,7 +58,7 @@
 			<li id="job" onclick="setGenerator('job')">Marketplace Job Titles</li>
 		</ul>
 		<div id="about">
-			<span>Version 1.1.0</span>
+			<span>Version 1.1.1</span>
 			<div id="nightmode_button" onclick="toggleNightMode()">💡</div>
 		</div>
 	</div>
