@@ -3,6 +3,7 @@ function generateJobTitle() {
 	
 	var levels = [
 		'Lead',
+		'Lead',
 		'Chief',
 		'Executive',
 		'Main',
@@ -86,8 +87,6 @@ function generateJobTitle() {
 		'Timezone',
 		'Extreme Pirate Beauty',
 		'Cute Vegetable High School Kingdom',
-		'High School Furniture Age',
-		'Galactic Furniture Pet',
 		'Yolo Life',
 		'Quality Restriction',
 		'Mass Production',
@@ -134,6 +133,8 @@ function generateJobTitle() {
 		'CEO',
 		'CTO',
 		'COO',
+		'Guy',
+		'Lord',
 		'Mechanic',
 		'Head of %',
 		'Head of % Division',

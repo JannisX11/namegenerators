@@ -29,6 +29,7 @@
 				case 'content': word = generateContentName(); break;
 				case 'team': word = generateTeamName(); break;
 				case 'job': word = generateJobTitle(); break;
+				case 't3i': word = generateT3iName(); break;
 			}
 			$('#word').text(word);
 			return word;
@@ -43,6 +44,7 @@
 	<script src="generators/mp_product.js"></script>
 	<script src="generators/mp_team.js"></script>
 	<script src="generators/mp_job.js"></script>
+	<script src="generators/t3i.js"></script>
 </head>
 <body>
 	<script>
@@ -56,6 +58,7 @@
 			<li id="content" onclick="setGenerator('content')">Marketplace Content Names</li>
 			<li id="team" onclick="setGenerator('team')">Marketplace Team Names</li>
 			<li id="job" onclick="setGenerator('job')">Marketplace Job Titles</li>
+			<li id="t3i" onclick="setGenerator('t3i')">Die Drei ???</li>
 		</ul>
 		<div id="about">
 			<span>Version 1.1.1</span>

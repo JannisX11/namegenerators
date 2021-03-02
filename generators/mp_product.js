@@ -3,6 +3,7 @@ function generateContentName() {
 
 	var themes = [
 		'Classic',
+		'Craftable',
 		'Modern',
 		'Advanced',
 		'Haunted',
@@ -43,6 +44,7 @@ function generateContentName() {
 		'One Block',
 		'Blocky',
 		'Epic',
+		'Billionaire',
 	]
 	var subjects = [
 		'Farm',
@@ -85,6 +87,8 @@ function generateContentName() {
 		'Yolo',
 		'Teens',
 		'Mobs',
+		'Houses',
+		'Castle',
 		'Knights',
 		'Popstar',
 		'K-Pop',
