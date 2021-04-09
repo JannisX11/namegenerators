@@ -44,10 +44,12 @@ function generateContentName() {
 		'One Block',
 		'Blocky',
 		'Epic',
+		'Wasp',
 		'Billionaire',
 	]
 	var subjects = [
 		'Farm',
+		'Wasps',
 		'Dinosaurs',
 		'Dinosaur',
 		'Pets',
