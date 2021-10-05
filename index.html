@@ -5,9 +5,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
+
+		Array.prototype.random = function() {
+			var i = Math.floor(Math.random()*this.length);
+			return this[i];
+		}
 
 		var selected_id;
 		function setGenerator(id) {
@@ -22,20 +28,42 @@
 				case 'realms': word = generateRealmsName(); break;
 				case 'content': word = generateContentName(); break;
 				case 'team': word = generateTeamName(); break;
+				case 'job': word = generateJobTitle(); break;
+				case 't3i': word = generateT3iName(); break;
 			}
 			$('#word').text(word);
 			return word;
 		}
+		function toggleNightMode() {
+			localStorage.setItem('namegen:night_mode', localStorage.getItem('namegen:night_mode') != 'true');
+			document.body.classList.toggle('night_mode');
+		}
+
 	</script>
-	<script src="generators.js"></script>
+	<script src="generators/realms.js"></script>
+	<script src="generators/mp_product.js"></script>
+	<script src="generators/mp_team.js"></script>
+	<script src="generators/mp_job.js"></script>
+	<script src="generators/t3i.js"></script>
 </head>
 <body>
+	<script>
+		if (localStorage.getItem('namegen:night_mode') == 'true') {
+			document.body.classList.add('night_mode');
+		}
+	</script>
 	<div id="menu">
 		<ul>
 			<li id="realms" onclick="setGenerator('realms')">Realms Map Names</li>
 			<li id="content" onclick="setGenerator('content')">Marketplace Content Names</li>
 			<li id="team" onclick="setGenerator('team')">Marketplace Team Names</li>
+			<li id="job" onclick="setGenerator('job')">Marketplace Job Titles</li>
+			<li id="t3i" onclick="setGenerator('t3i')">Die Drei ???</li>
 		</ul>
+		<div id="about">
+			<span>Version 1.1.1</span>
+			<div id="nightmode_button" onclick="toggleNightMode()">💡</div>
+		</div>
 	</div>
 	<div id="main">
 		<h2 id="word"> </h2>
