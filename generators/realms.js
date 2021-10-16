@@ -118,6 +118,7 @@ function generateRealmsName() {
 		'Pizza',
 		'Flood',
 		'Section',
+		'Sound',
 	]
 	var actions = [
 		'Battle',
@@ -197,11 +198,13 @@ function generateRealmsName() {
 		'Seek',
 		'Seeker',
 		'Hide and Seek',
+		'Speedrun',
 		'of the Gods',
 		'of the Depth',
 		'of the Ocean',
 		'of the Unforgotten',
 		'of Wizards',
+		'of Minecraft',
 	]
 	var bl = [
 		'WorldWar',
