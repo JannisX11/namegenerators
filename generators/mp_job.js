@@ -28,6 +28,7 @@ function generateJobTitle() {
 		'Highly Productive',
 		'Cheeky',
 		'Creative',
+		'Superior',
 		'',
 	]
 	var subjects = [
@@ -151,6 +152,7 @@ function generateJobTitle() {
 		'Head of % and %',
 		'% and % Expert',
 		'Expert for %',
+		'Legend',
 	]
 
 	let job = jobs.random()
